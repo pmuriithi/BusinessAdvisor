@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Business Advisor</title>
+  <meta name="analytics" content="Business Advisor">
+
+  <link rel="stylesheet" href="startbootstrap-business-casual-1.0.3/css/business-casual.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+         <div id=”wrapper”>
+                <header class=”main_headline”>
+                        <nav>
+                                <ul>
+                                        <li><a href=”#”>My profile</a></li>
+                                        <li><a href=”#”>Previous Analysis</a></li>
+                                        <li><a href=”#”>Upload Data</a></li>
+                                </ul>
+                        </nav>
+                        <h1>Business Advisor </h1>
+                </header>
+                <div id=”primary_content”>
+                        <section id=”left_column”>
+                                <h3>Transaction File</h3>
+									<h3>Client File</h3>
+								<p><button>Continue</button></p>
+                        </section>
+
+                        <section id=”right_column”>
+                                <article>
+<header>
+<h3>transaction_file.xls</h3>
+	<p><button>Search in</button></p>
+<h3>client_file.xls</h3>
+	<p><button>Search in</button></p>
+                                        </header>
+                                        
+                                </article>
+                        </section>
+                </div>
+				<table>
+  <caption>Updated Files</caption>
+  <tr>
+    <th>Succeeded</th>
+     </tr>
+  <tr>
+    <td>Trans1_file</td>
+     </tr>
+	 <tr>
+    <td>Trans2_file</td>
+     </tr>
+	 <tr>
+    <td>Client1_file</td>
+     </tr>
+</table>
+<table>
+										
+                <footer>
+                        <p>Business Advisor Analytics Corp. Calle Asturias 61, 08012, Barcelona</p>
+                </footer>
+</div>
+<var> upload = new uploader(document.getElementById('file-input-element'), {options});
+</var>
+</body>
+</html>
