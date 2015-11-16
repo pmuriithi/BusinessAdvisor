@@ -4,7 +4,7 @@ import xlrd
 from xlrd import open_workbook
 from flask import Flask
 
-path = 'temp_files/'
+path = 'C:\\Users\\POLY\\Google Drive\\Desktop\\UPC\\BIP\\project\\temp\\test\\'
 filename = ''
 
 def parse_file(filename):

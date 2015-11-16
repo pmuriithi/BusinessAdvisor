@@ -9,13 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About - Business Casual - Start Bootstrap Theme</title>
-
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="static/css/business-casual.css" rel="stylesheet">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -32,8 +31,8 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="brand">Business Advisor</div>
+    <div class="address-bar"> Barcelona </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -47,10 +46,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
+                <a class="navbar-brand" href="index.html">Business Advisor</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="home">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
@@ -58,9 +57,37 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
+					<li class="dropdown">
+						<a href="account" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Nav header</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+					</li>
+					<li>
+                        <a href="profile.html">My profile</a>
+                    </li>					
+					<li>
+                        <a href="upload.html">upload</a>
                     </li>
+					<li>
+                        <a href="analysis.html">Analysis</a>
+                    </li>						
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
@@ -70,15 +97,16 @@
         </div>
         <!-- /.container -->
     </nav>
-
+	
     <div class="container">
 
-        <div class="row">
+		<div class="row">
             <div class="box">
-                <div class="col-lg-12">
+			
+				<div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">About
-                        <strong>business casual</strong>
+                        <strong>business Advisor</strong>
                     </h2>
                     <hr>
                 </div>
@@ -86,13 +114,19 @@
                     <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <p>This is a great place to introduce your company or project and describe what you do.</p>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                <div class="clearfix"></div>
+					<p></p
+                    <p>We are surrounded by small service businesses all with one question in mind. Who is my customer? How can I serve them better?</p
+                    <p>Our company can satisfy desires of small businesses, by giving different personalized analyses with help of different and advance data mining techniques.</p
+                    <p>Our goal is to help millions of small businesses i.e cafes and shops etc. to become more successful and profitable. Our company found a solution. We analyse your data and give you advice.</p>
+					<p>It is so simple! </p>
+					<p>Our service can tell you what is best!</p><br></br>
+				</div>
+				<div class="clearfix"></div>				
             </div>
         </div>
+	</div>	
+
+    <div class="container">
 
         <div class="row">
             <div class="box">
@@ -105,20 +139,20 @@
                 </div>
                 <div class="col-sm-4 text-center">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>John Smith
-                        <small>Job Title</small>
+                    <h3>Ekaterina Dobrokhotova
+                    <!--     <small>job title</small> -->
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>John Smith
-                        <small>Job Title</small>
+                    <h3>Eric G. Rodíguez Salazar
+                        <!-- <small>Job Title</small> -->
                     </h3>
                 </div>
                 <div class="col-sm-4 text-center">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <h3>John Smith
-                        <small>Job Title</small>
+                    <h3>Daria Glushkova
+                        <!-- <small>Job Title</small> -->
                     </h3>
                 </div>
                 <div class="clearfix"></div>
@@ -129,13 +163,9 @@
     <!-- /.container -->
 
     <footer>
-        <div class="container">
-            <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Business Advisor 2015</p>
                 </div>
-            </div>
-        </div>
     </footer>
 
     <!-- jQuery -->

@@ -5,12 +5,8 @@ from xlrd import open_workbook
 from flask import Flask, request, redirect, url_for,render_template
 from werkzeug import secure_filename
 from flask import send_from_directory
-import parse
-import os.path
-import storage
-
 #where we store the uploaded file(use double slash to avoid the IOError22: invalid filename)
-UPLOAD_FOLDER =  'temp_files/'
+UPLOAD_FOLDER =  'C:\\Users\\POLY\\Google Drive\\Desktop\\UPC\\BIP\\project\\temp\\test'
 #The file formats that are acceptable for upload
 ALLOWED_EXTENSIONS = set(['xls','xlsx'])
 
@@ -22,8 +18,8 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 		   
 @app.route('/')
-def interface():
-	return render_template('interface.html')
+def upload_data():
+	return render_template('upload.html')
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -36,16 +32,14 @@ def upload_file():
 			#redirect the user to the URL of the uploaded file
             return redirect(url_for('uploaded_file',
                                     filename=filename))
-        else:
-            return redirect(url_for('interface'))
+	else:
+		redirect(url_for('upload_data'))# we need to show a notification stating that the file cannot be found
+		return 'Invalid file'
 			
 		
 #serving the uploaded file. Takes in the filename as a parameter and finds it in the upload directory and shows it on the browser
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
-    if os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'], filename)):
-        parse.parse_file(filename)
-        storage.main()
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
 

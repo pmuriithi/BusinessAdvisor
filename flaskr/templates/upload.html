@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Business Advisor</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Bootstrap -->
+			<link rel="stylesheet" href="static/css/bootstrap.min.css">
+			 <!-- Custom CSS -->
+			<link rel="stylesheet" href="static/css/business-casual.css">
+            <link rel="stylesheet" href="static/css/bootstrap.css">
+			
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">			
+
+            
+			<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <![endif]-->
+</head>
+
+<body>
+	<div class="brand">Business Advisor</div>
+	<div class="address-bar"> Barcelona </div>
+		
+	<!-- Navbar -->
+	<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="upload.html">upload</a>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="dropdown">
+						<a href="account.html" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Nav header</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+					</li>
+					<li>
+                        <a href="profile.html">My profile</a>
+                    </li>					
+					<li>
+                        <a href="upload.html">upload</a>
+                    </li>
+					<li>
+                        <a href="anakysis.html">Analysis</a>
+                    </li>					
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>	 
+		</div>
+	</div>	
+    
+	<div class="container">
+        <!-- <div class="jumbotron"> -->
+		<div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-left">
+                    <h1 class="brand-name">Upload File</h1>
+                    <!-- <hr width="200"   align="left"> -->
+					<p class="lead">Choose the transaction and/or client file below you wish to upload for analysis. All correct uploaded files will be shown to the right, and when finished you may choose to continue by pressing the button.</p>
+					<div class="row">
+						<div class="col-md-4">
+				
+							<br></br>
+							<h3>Transaction File</h3>
+							<p>Please upload a transaction file in .xls or .xlsx format.</p>
+							<p>
+								<form action="upload" method=post enctype=multipart/form-data> 
+								<!-- enctype=multipart/form-data is usually set to ensure that the browser will transmit all your files-->
+									<input type='file' name='file'> 
+									<!--	<input type='submit' value="Upload and Process Selected File"> -->
+									<input type='submit' value="Upload"> 
+								</form>
+							</p>
+						</div>
+						<br></br>
+						<div class="col-md-4">
+							<h3>Client File</h3>
+							<p>Please upload a client file in .xls or .xlsx format.</p>
+							<p>
+								<form action="upload" method=post enctype=multipart/form-data> 
+								<!-- enctype=multipart/form-data is usually set to ensure that the browser will transmit all your files-->
+									<input type='file' name='file'> 
+									<!--    <input type='submit' value="Upload and Process Selected File"> -->
+									<input type='submit' value="Upload"> 
+								</form>
+							</p>
+						</div>
+						<div class="col-md-4">
+							<!--<h3>Updated Files</h3>
+								<table>
+									<tr>
+										<td>Trans1_file</td>
+									</tr>
+									<tr>
+										<td>Trans2_file</td>
+									</tr>
+									<tr>
+										<td>Client1_file</td>
+									</tr>
+								</table><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p> -->
+							<p>
+								<a href="#" class="btn btn-primary">Continue &raquo;</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+		
+    <footer>
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Business Advisor 2015</p>
+                </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>		
+		
